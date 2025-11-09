@@ -7,8 +7,9 @@ services:
       - MSSQL_PID=Evaluation
     ports:
       - 777:1433
-    restart: unless-stopped
     volumes:
       - "./data/:/var/opt/mssql/data/"
       - "./log/:/var/opt/mssql/log/"
       - "./secrets/:/var/opt/mssql/secrets/"
+volumes:
+  sqlserver_data:
