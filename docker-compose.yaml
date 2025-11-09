@@ -8,3 +8,5 @@ services:
     ports:
       - 777:1433
     restart: unless-stopped
+    volumes:
+      - "./mssql/:/var/opt/mssql/"
