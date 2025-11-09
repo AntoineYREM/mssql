@@ -7,3 +7,4 @@ services:
       - MSSQL_PID=Evaluation
     ports:
       - 777:1433
+    restart: unless-stopped
