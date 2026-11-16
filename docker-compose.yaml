@@ -5,6 +5,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
       - MSSQL_PID=Evaluation
+      - MSSQL_MEMORY_LIMIT_MB=1024
     ports:
       - 777:1433
     volumes:
